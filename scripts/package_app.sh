@@ -18,6 +18,8 @@ ICONSET_DIR="$ROOT_DIR/dist/AppIcon.iconset"
 cd "$ROOT_DIR"
 
 echo "[1/6] Building arm64 release binary..."
+# Avoid stale module cache path conflicts when the project directory name changes.
+rm -rf "$ROOT_DIR/.build/arm64-apple-macosx/release/ModuleCache"
 swift build -c release --arch arm64
 
 echo "[2/6] Creating app bundle layout..."
