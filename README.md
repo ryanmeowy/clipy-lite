@@ -21,15 +21,6 @@
 - macOS 13.0 及以上
 - Apple Silicon
 
-## 打包发布（维护者）
-
-项目已内置打包脚本：
-
-```bash
-cd /Users/ryan/code/clipy-lite
-bash scripts/package_app.sh
-```
-
 ## License
 
 MIT
