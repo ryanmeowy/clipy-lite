@@ -19,7 +19,7 @@
 ## 系统要求
 
 - macOS 13.0 及以上
-- Apple Silicon（当前打包脚本产物为 `arm64`）
+- Apple Silicon
 
 ## 打包发布（维护者）
 
@@ -29,31 +29,6 @@
 cd /Users/ryan/code/clipy-lite
 bash scripts/package_app.sh
 ```
-
-产物位置：
-
-- App Bundle：`dist/ClipyLite.app`
-- 可分发压缩包：`dist/ClipyLite-arm64.zip`
-
-发布到 GitHub：
-
-1. 进入仓库 `Releases` -> `Draft a new release`
-2. 填写版本号（如 `v1.0.0`）
-3. 上传 `dist/ClipyLite-arm64.zip`
-4. 发布
-
-## 目录结构
-
-```text
-Sources/               # 应用源码
-scripts/package_app.sh # 打包脚本
-dist/                  # 打包产物与图标资源
-```
-
-## 已知说明
-
-- 当前签名为 ad-hoc（开发分发可用）
-- 若用于更广泛分发，建议后续接入 Apple Developer 签名与 Notarization
 
 ## License
 
